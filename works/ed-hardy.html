@@ -175,10 +175,10 @@
 
         </section>
 
-        <div class="album py-4 grid">
+        <div class="album py-4">
             <div class="container">
 
-                <div class="grid grid-sizer row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
                     data-masonry='{"percentPosition": true }'>
                     <div class="col text-center">
                         <img src="../img/works/ed-hardy/ed-hardy-email-1.png" class="img-fluid" alt="Ed Hardy E-Mail 1">
@@ -231,22 +231,6 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script>
-        // init Masonry
-        var grid = document.querySelector('.grid');
-
-        var msnry = new Masonry(grid, {
-            itemSelector: '.col',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
-
-        // layout Masonry after each image loads
-        $grid.imagesLoaded().progress(function () {
-            $grid.masonry('layout');
-        });
-    </script>
 
 
 </body>
