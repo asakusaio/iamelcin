@@ -174,10 +174,10 @@
 
         </section>
 
-        <div class="album py-4">
+        <div class="album py-4 grid">
             <div class="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
+                <div class="grid grid-sizer row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
                     data-masonry='{"percentPosition": true }'>
                     <div class="col text-center">
                         <img src="../img/works/jtc/jtc-email-1.png" class="img-fluid" alt="JTC Illustration 1">
@@ -244,9 +244,14 @@
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script>
         // init Masonry
-        var $grid = $('.grid').masonry({
-            // options...
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry(grid, {
+            itemSelector: '.col',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
         });
+
         // layout Masonry after each image loads
         $grid.imagesLoaded().progress(function () {
             $grid.masonry('layout');

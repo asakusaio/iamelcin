@@ -118,14 +118,20 @@
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">About me</h4>
-                        <p class="text-muted">Hey! I'm Elcin, a graphic designer and illustrator based in Manchester, UK. With a love for both digital and traditional mediums, I enjoy bringing my creativity to life across print, digital, and social channels. From concept to execution, I strive to create designs that engage and inspire.</p>
+                        <p class="text-muted">Hey! I'm Elcin, a graphic designer and illustrator based in Manchester,
+                            UK. With a love for both digital and traditional mediums, I enjoy bringing my creativity to
+                            life across print, digital, and social channels. From concept to execution, I strive to
+                            create designs that engage and inspire.</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                         <h4 class="text-white">Contact</h4>
                         <ul class="list-unstyled">
-                            <li><a href="//www.behance.net/elcinust" rel="nofollow" target="_blank" class="text-white">Behance</a></li>
-                            <li><a href="//www.linkedin.com/in/elcin-u-473213238" rel="nofollow" target="_blank" class="text-white">LinkedIn</a></li>
-                            <li><a href="mailto:kuralelcin@gmail.com" rel="nofollow" target="_blank" class="text-white">E-mail</a></li>
+                            <li><a href="//www.behance.net/elcinust" rel="nofollow" target="_blank"
+                                    class="text-white">Behance</a></li>
+                            <li><a href="//www.linkedin.com/in/elcin-u-473213238" rel="nofollow" target="_blank"
+                                    class="text-white">LinkedIn</a></li>
+                            <li><a href="mailto:kuralelcin@gmail.com" rel="nofollow" target="_blank"
+                                    class="text-white">E-mail</a></li>
                         </ul>
                     </div>
                 </div>
@@ -176,7 +182,7 @@
         <div class="album py-4">
             <div class="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
+                <div class="grid grid-sizer row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
                     data-masonry='{"percentPosition": true }'>
                     <div class="col text-center">
                         <img src="../img/works/saul-clothing/saul-clothing-email-1.png" class="img-fluid"
@@ -228,9 +234,14 @@
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script>
         // init Masonry
-        var $grid = $('.grid').masonry({
-            // options...
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry(grid, {
+            itemSelector: '.col',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
         });
+
         // layout Masonry after each image loads
         $grid.imagesLoaded().progress(function () {
             $grid.masonry('layout');
