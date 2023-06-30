@@ -1,0 +1,84 @@
+/* IAMELCIN COLORS
+blu - #232C4D 
+beije - #E3D8C6 
+notwhite- #FEFBF9 
+white - #FFFFFF 
+dark - #848484  
+*/
+
+.body {
+    font-family: 'Avenir', sans-serif;
+}
+
+a {
+    color: #232C4D;
+}
+
+a:hover {
+    color: #E3D8C6;
+}
+
+a:visited {
+    color: #848484;
+
+}
+
+.text-color-blu {
+    color: #232C4D;
+}
+
+.background-color-blu {
+    background-color: #232C4D;
+}
+
+.text-color-light {
+    color: #FEFBF9;
+}
+
+.background-color-light {
+    background-color: #FEFBF9;
+}
+
+.text-color-dark {
+    color: #848484;
+}
+
+.background-color-dark {
+    background-color: #848484;
+}
+
+.title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 600;
+}
+
+.description {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 400;
+}
+
+#back-to-top {
+    color: #848484;
+}
+
+#navbarHeader {
+    background-color: #232C4D;
+}
+
+#iamelcin-logo {
+    max-width: 100px;
+}
+
+.work-main-image {
+    margin-bottom: 10px;
+}
+
+.work-main-image img {
+    width: 100%;
+}
+
+/* @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+} */
