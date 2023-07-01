@@ -62,3 +62,36 @@ main {
 .desc p {
     /* margin-bottom: 10px; */
 }
+
+@media only screen and (max-width: 640px) {
+    .work-main-image {
+        margin-bottom: 20px !important;
+    }
+    .brand-name-title,
+    .brand-services-title,
+    .brand-project-title {
+        font-size: 18px;
+        width: 100% !important;
+    }
+    .brand-name,
+    .brand-project-desc,
+    .brand-services {
+        font-size: 15px;
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .brand-name-title,
+    .brand-services-title,
+    .brand-project-title {
+        font-size: 18px;
+        width: 100% !important;
+    }
+    .brand-name,
+    .brand-project-desc,
+    .brand-services {
+        font-size: 15px;
+        width: 100% !important;
+    }
+}
